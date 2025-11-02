@@ -1,0 +1,49 @@
+.admin-panel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.admin-actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.add-user-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: var(--surface-secondary);
+  border-radius: var(--radius-md);
+}
+
+.add-user-form input {
+  padding: var(--space-3);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-sm);
+}
+
+.users-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.users-table th {
+  background: var(--surface-secondary);
+}

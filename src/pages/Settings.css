@@ -1,0 +1,21 @@
+.settings-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3D34F2 0%, #2B24B3 100%);
+  padding: var(--spacing-lg);
+}
+
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.user-info {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 1px solid var(--color-gray-200);
+}

@@ -1,0 +1,131 @@
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  padding: var(--space-4);
+  background: #91918D16;
+  border-radius: var(--radius-2xl);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.leaderboard-item:hover {
+  background: #91918D40;
+}
+
+.leaderboard-item--gold > .leaderboard-item__rank {
+  color: #EAC34E;
+}
+
+.leaderboard-item--silver > .leaderboard-item__rank {
+  color: #C4EEEE;
+}
+
+.leaderboard-item--bronze > .leaderboard-item__rank {
+  color: #BB771E;
+}
+
+.leaderboard-item__rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-right: var(--space-2);
+  color: var(--text-primary);
+}
+
+.leaderboard-item__avatar {
+  margin-right: var(--space-4);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-avatar-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.leaderboard-item__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.leaderboard-item__name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: var(--space-1);
+  color: var(--text-primary);
+}
+
+.leaderboard-item__tag {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+.leaderboard-item__steps {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.steps-count {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.trend-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trend-icon--up {
+  color: var(--color-success);
+}
+
+.trend-icon--down {
+  color: var(--color-error);
+}
+
+.trend-icon--neutral {
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 768px) {
+  .leaderboard-item {
+    padding: var(--space-3) var(--space-4);
+  }
+  
+  .leaderboard-item__rank {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    margin-right: var(--space-3);
+  }
+  
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .leaderboard-item__name {
+    font-size: 0.875rem;
+  }
+  
+  .steps-count {  
+    font-size: 0.875rem;
+  }
+}

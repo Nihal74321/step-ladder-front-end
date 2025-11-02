@@ -1,0 +1,16 @@
+.leaderboard-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3D34F2 0%, #2B24B3 100%);
+  padding: var(--spacing-lg);
+}
+
+.leaderboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .leaderboard-page {
+    padding: var(--spacing-md);
+  }
+}

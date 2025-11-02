@@ -1,0 +1,122 @@
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  background: var(--color-white);
+  padding: var(--spacing-2xl);
+}ƒ
+
+.auth-form__header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.auth-form__header h2 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray-900);
+}
+
+.auth-form__header p {
+  color: var(--color-gray-600);
+  margin-bottom: 0;
+}
+
+.auth-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+  color: var(--color-gray-700);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.auth-form__error {
+  padding: var(--spacing-md);
+  background: #FEF2F2;
+  border-radius: var(--radius-md);
+  color: #DC2626;
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.auth-form__submit {
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.auth-form__divider {
+  display: flex;
+  align-items: center;
+  margin: var(--spacing-lg) 0;
+  color: var(--color-gray-500);
+}
+
+.auth-form__divider::before,
+.auth-form__divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-gray-300);
+}
+
+.auth-form__divider span {
+  padding: 0 var(--spacing-md);
+  font-size: 0.875rem;
+}
+
+.auth-form__social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.social-btn {
+  width: 100%;
+  justify-content: flex-start;
+  gap: var(--spacing-md);
+}
+
+.auth-form__footer {
+  text-align: center;
+  color: var(--color-gray-600);
+}
+
+.auth-form__link {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.auth-form__link:hover {
+  color: var(--color-secondary);
+}
+
+@media (max-width: 480px) {
+  .auth-form {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md);
+  }
+}
